@@ -111,12 +111,6 @@ if [ -f "/opt/docker/.firstrun" ]; then
         /etc/init.d/elasticsearch stop > /dev/null 2>&1
     fi
 
-    
-    # Pingback
-    if [[ $DISABLE_PINGBACK != "yes" ]];
-    then
-        /usr/local/bin/phantomjs --ssl-protocol=any /opt/docker/pingback.js
-    fi
 fi
 echo "System services are starting..."
 /etc/init.d/elasticsearch start > /dev/null 2>&1
