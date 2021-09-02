@@ -113,7 +113,7 @@ RUN chmod +x /etc/init.d/parsoid; \
 	sed -i 's/^max_execution_time.*$/max_execution_time = 600/g' /etc/php/7.3/fpm/php.ini; \
 	sed -i 's/^post_max_size.*$/post_max_size = 128M/g' /etc/php/7.3/fpm/php.ini; \
 	sed -i 's/^upload_max_filesize.*$/upload_max_filesize = 128M/g' /etc/php/7.3/fpm/php.ini; \
-	sed -i 's/^;date.timezone.*$/date.timezone = Europe\/Berlin/g' /etc/php/7.3/fpm/php.ini; \
+	sed -i 's/^;date.timezone.*$/date.timezone = Europe\/Moscow/g' /etc/php/7.3/fpm/php.ini; \
 	sed -i 's/^memory_limit =.*$/memory_limit = 512M/g' /etc/php/7.3/fpm/php.ini; \
 	sed -i 's/^;opcache.enable=.*$/opcache.enable=1/g' /etc/php/7.3/fpm/php.ini; \
 	sed -i 's/^;opcache.memory_consumption.*$/opcache.memory_consumption=256/g' /etc/php/7.3/fpm/php.ini; \
